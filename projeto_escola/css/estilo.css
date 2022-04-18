@@ -1,0 +1,170 @@
+body{
+    font-family: "Segoe UI";
+    font-size: 18px;
+}
+h1{
+    text-align: center;
+}
+.head{
+    width: 100%;
+    height: 105px;
+    background-color: rgba(30, 39, 46,1.0);
+    position: sticky;
+}
+.img{
+    position: relative;
+    height: 100px;
+    left: 33%;
+}
+.menubar{  
+	position: relative;
+	left: 0px;
+	top: 0px;
+    width: 100%;
+    box-shadow: 8px 8px 16px black;
+   	background: rgba(0, 184, 148,1.0);
+    display: flex;
+        margin:0 auto;
+}
+.menu-dropdown {   
+    display: flex;
+    align-items: center;
+    margin: 0;
+    list-style-type: none;
+}
+.menu-dropdown .md-item{  
+    position: relative;
+    left:20 px;
+    transition: background-color 0.5s;
+
+}
+.menu-dropdown .md-item:hover{ /* efeito hover nos itens do menu principal */
+    background-color:black;
+}
+.menu-dropdown .md-item a{
+    color: #fff;
+	font-family: "Segoe UI";
+    font-size: 19px;
+    padding:10px 20px;
+    text-decoration: none;
+    display: flex;
+
+}
+.menu-dropdown .md-item a:hover{ /* efeito hover nos links do menu principal */
+    background: black;
+}
+.submenu-dropdown{
+    display: none; /* esconde o submenu dropdown */
+    position: absolute;
+    width:100%;  
+}
+.sd-item:hover .submenu-dropdown{
+    display: flex;  
+}
+.submenu-dropdown .sd-item{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    top: 100%;
+    width: 100%;
+ }
+.submenu-dropdown .sd-item a{
+    width:100%;
+    padding:10px;
+    background: rgba(0, 184, 148,1.0);
+    color: #fff; 
+}
+.submenu-dropdown .sd-item a:hover { /* efeito hover nos itens do submenu dropdown */
+    background-color: black;
+}
+.menu-dropdown .md-item:hover .submenu-dropdown{   /*efeito hover para alterar a cor de fundo*/
+    background-color: black; 
+    display: flex; /* exibir o submenu dropdown */
+}
+
+.mb-3{
+    width: 300px;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+
+.chat{
+    border-radius: 15px 15px 15px 15px;
+    border: 1px solid black;
+    width: 320px;
+    height: 330px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    background-color: rgba(30, 39, 46,1.0);
+
+}
+.head-chat{
+    color: white;
+    background-color: rgba(30, 39, 46,1.0);
+    border-radius: 15px 15px 0px 0px;
+}
+.send{
+    position: absolute;
+    left: 10px;
+}
+.labelchat{
+    color: white;
+    background-color: rgba(30, 39, 46,1.0);
+}
+.matricula{
+    position: relative;
+    left: 40%;
+    width: 200px;
+    top: 80px;
+    font-size: 18px;
+}
+.form-matricula p, h3{
+  
+    width: 400px;
+    text-align: center;
+    left: 33%;
+    position: relative;
+    top: 50px;
+}
+.avancar{
+    position: relative;
+    top: 30px;
+    left: 75%;
+}
+.desc_ativ{
+    position: absolute;
+    top: 150px;
+    left: 40%;
+}
+.botao1{
+    position: relative;
+    right: 30px;
+}
+.botao2{
+    position: relative;
+    left: 30px;
+}
+.diasemana{
+    position: relative;
+    top: 30px;
+}
+.bg{
+    height: 600px;
+}
+.notas, .faltas, .form-mat{
+    position: relative;
+    top: 50px;
+
+}
+.tb, .headtb{
+    text-align: center;
+}
+.form{
+    position: relative;
+    left: 50%;
+}
+.voltar, .botaoavancar{
+    height: 50px;
+}
