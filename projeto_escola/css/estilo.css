@@ -1,4 +1,8 @@
 body{
+    background-image: url("../img/orange.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: "Segoe UI";
     font-size: 18px;
 }
@@ -6,10 +10,20 @@ h1{
     text-align: center;
 }
 .head{
+    position: fixed;
     width: 100%;
     height: 105px;
     background-color: rgba(30, 39, 46,1.0);
-    position: sticky;
+    font-family: "The Childrow";
+    font-size: 70px;
+}
+.head a{
+    top: -10px;
+    position: relative;
+    left: 10%;
+    text-decoration: none;
+    color: white;
+    text-shadow: 4px 4px 8px cadetblue;
 }
 .img{
     position: relative;
@@ -17,12 +31,12 @@ h1{
     left: 33%;
 }
 .menubar{  
-	position: relative;
+	position: fixed;
 	left: 0px;
-	top: 0px;
+	top: 100px;
     width: 100%;
     box-shadow: 8px 8px 16px black;
-   	background: rgba(0, 184, 148,1.0);
+   	background: rgba(0, 0, 0, 0.1);
     display: flex;
         margin:0 auto;
 }
@@ -42,7 +56,7 @@ h1{
     background-color:black;
 }
 .menu-dropdown .md-item a{
-    color: #fff;
+    color: whitesmoke;
 	font-family: "Segoe UI";
     font-size: 19px;
     padding:10px 20px;
@@ -52,6 +66,7 @@ h1{
 }
 .menu-dropdown .md-item a:hover{ /* efeito hover nos links do menu principal */
     background: black;
+    color: white;
 }
 .submenu-dropdown{
     display: none; /* esconde o submenu dropdown */
@@ -72,7 +87,7 @@ h1{
 .submenu-dropdown .sd-item a{
     width:100%;
     padding:10px;
-    background: rgba(0, 184, 148,1.0);
+    background: rgba(0, 0, 0, 0.2);
     color: #fff; 
 }
 .submenu-dropdown .sd-item a:hover { /* efeito hover nos itens do submenu dropdown */
@@ -94,16 +109,24 @@ h1{
     border: 1px solid black;
     width: 320px;
     height: 330px;
-    position: absolute;
+    position: fixed;    
     bottom: 50px;
     right: 50px;
-    background-color: rgba(30, 39, 46,1.0);
+    background: rgba(0, 0, 0, 0.3);
 
 }
 .head-chat{
     color: white;
     background-color: rgba(30, 39, 46,1.0);
     border-radius: 15px 15px 0px 0px;
+    font-family: "The Childrow";
+    height: 40px;
+}
+.head-chat p{
+    font-size: 20px;
+    position: relative;
+    left: 10%;
+    margin-top: 15px;
 }
 .send{
     position: absolute;
@@ -120,13 +143,11 @@ h1{
     top: 80px;
     font-size: 18px;
 }
-.form-matricula p, h3{
-  
+.form-mat p, h4{
     width: 400px;
     text-align: center;
     left: 33%;
     position: relative;
-    top: 50px;
 }
 .avancar{
     position: relative;
@@ -154,12 +175,18 @@ h1{
     height: 600px;
 }
 .notas, .faltas, .form-mat{
-    position: relative;
-    top: 50px;
-
+     position: static;
+    
 }
 .tb, .headtb{
     text-align: center;
+}
+.headtb{
+    background-color: rgba(30, 39, 46,1.0);
+    color: whitesmoke;
+}
+.headtb:hover b{
+    color: whitesmoke;
 }
 .form{
     position: relative;
@@ -167,4 +194,30 @@ h1{
 }
 .voltar, .botaoavancar{
     height: 50px;
+}
+tr{
+    background: rgba(255, 255, 255, 0.2);
+}
+.book{
+    position: relative;
+    height: 120px;
+    left: 3%;
+}
+.btsair{
+    position: absolute;
+    top: 10px;
+    right: 5%;
+}
+.title{
+    font-family: "The Childrow";
+    position: static;
+    color: white;
+    text-align: center;
+}
+.title h2{
+    font-size: 50px;
+    text-shadow: 4px 4px 8px black;
+}
+.out{
+    font-family: "Segoe UI";
 }
