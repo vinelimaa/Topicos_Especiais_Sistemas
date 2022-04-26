@@ -1,0 +1,660 @@
+body{
+    background-image: url("../img/escola.png");
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    font-family: "Segoe UI";
+    font-size: 18px;
+}
+h1{
+    text-align: center;
+}
+/*-------- head ----------*/
+.head{
+    position: relative;
+    width: 100%;
+    height: 105px;
+    background-color: rgba(30, 39, 46,1.0); 
+}
+.headcircle a{
+    position: relative;
+    left: 18%;
+    text-decoration: none;
+    color: white;
+    text-shadow: 4px 4px 8px black;
+}
+.headcircle{
+    font-size: 70px;
+    font-family: "The Childrow";
+    position: absolute;
+    box-shadow: 0px 8px 8px 0px black;
+    border-radius: 0px 0px 150px 150px;
+    background-color: rgba(22, 160, 133,1.0);
+    top: 0px;
+    left: 38%;
+    width: 300px;
+    height: 155px;
+}
+.modulo img{
+   width: 100px;
+}
+.modulo b{
+    font-size: 26px;
+    margin-left: 20px;
+    color: white;
+}
+.modulo2 img{
+   width: 100px;
+}
+.modulo2 b{
+    position: absolute;
+    top: 22px;
+    font-size: 26px;
+    margin-left: 120px;
+    color: white;
+}
+
+/*-------- menu -------*/
+.menubar{  
+    width: 80%;
+    border-radius: 0px 0px 50px 50px;
+    box-shadow: 8px 8px 16px black;
+   	background-color: rgba(22, 160, 133,1.0);
+    display: flex;
+        margin:0 auto;
+}
+.menu-dropdown {   
+    display: flex;  
+    align-items: center;
+    margin: 0;
+    list-style-type: none;
+}
+.menu-dropdown .md-item{  
+    position: relative;
+    left:20 px;
+    transition: background-color 0.5s;
+}
+.menu-dropdown .md-item:hover{ /* efeito hover nos itens do menu principal */
+    background-color:black;
+}
+.menu-dropdown .md-item a{
+    color: white;
+    text-shadow: 4px 4px 8px black;
+	font-family: "Segoe UI";
+    font-size: 19px;
+    padding:10px 35px;
+    text-decoration: none;
+    display: flex;
+}
+.menu-dropdown .md-item a:hover{ /* efeito hover nos links do menu principal */
+    background: black;
+    color: white;
+}
+.submenu-dropdown{
+    display: none; /* esconde o submenu dropdown */
+    position: relative;
+    width:100%;  
+}
+.sd-item:hover .submenu-dropdown{
+    display: flex;  
+}
+.submenu-dropdown .sd-item{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    top: 100%;
+    width: 100%;
+ }
+.submenu-dropdown .sd-item a{
+    width:100%;
+    padding:10px;
+    background-color: rgba(30, 39, 46,1.0);
+    color: #fff; 
+}
+.submenu-dropdown .sd-item a:hover { /* efeito hover nos itens do submenu dropdown */
+    background-color: black;
+}
+.menu-dropdown .md-item:hover .submenu-dropdown{   /*efeito hover para alterar a cor de fundo*/
+    background-color: black; 
+    display: flex; /* exibir o submenu dropdown */
+}
+.espaco{
+    width: 350px;
+}
+/*menu caixa de entrada-------------------------*/
+.empty{
+    height: 50px;
+}
+.dropbar{  
+    text-align: center;
+    top: 100px;
+    width: 100%;
+    display: flex;
+        margin:0;
+}
+.drop-menu{
+    width: 100%;  
+    display: flex;  
+    align-items: center;
+    margin: 0;
+    list-style-type: none;
+}
+.drop-menu .item{
+      background-color: rgba(30, 39, 46,1.0);
+    border-radius: 10px 10px 10px 10px; 
+    margin-right: 20px;
+    width: 100%;
+    border: 3px solid black;
+    transition: background-color 0.5s;
+}
+.drop-menu .item:hover{
+    background: rgba(0, 0, 0, 0.3);
+}
+.drop-menu .item b{
+    color: white;
+    text-shadow: 4px 4px 8px black;
+    font-family: "Segoe UI";
+    font-size: 25px;
+    text-decoration: none;
+}
+.drop-menu .item .mail{
+    color: white;
+    text-shadow: 4px 4px 4px black;
+    font-family: "The Childrow";
+    font-size: 40px;
+    text-decoration: none;
+}
+.drop-menu .item:hover .mail{
+    font-size: 50px;
+}
+.drop-menu .item p{
+    margin-top: 20px;
+}
+
+.drop-menu .item b:hover{
+    color: white;
+}
+.submenu-dropmenu{
+    height: 500px;
+    display: none; /* esconde o submenu dropdown */
+    position: relative;
+    width:100%;
+    margin-bottom: 100px;  
+}
+.item:hover .submenu-dropmenu{
+    display: flex;  
+}
+.botao9{
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 0;
+    border: 2px solid black;
+    width: 98%;
+    margin-top: 2px;
+}
+.botao9:hover{
+    background-color: black;
+    border: 2px solid black;
+}
+.submenu-dropmenu .item p{
+    margin-top: 120px;
+}
+
+/*----------- chat ------------*/
+.mb-3{
+    width: 300px;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+.chat{
+    border-radius: 15px 15px 15px 15px;
+    border: 2px solid black;
+    width: 325px;
+    height: 330px;
+    position: fixed;    
+    bottom: 50px;
+    right: 50px;
+    background: rgba(0, 0, 0, 0.3);
+}
+.head-chat{
+    color: white;
+    background-color: rgba(30, 39, 46,1.0);
+    border-radius: 15px 15px 0px 0px;
+    font-family: "The Childrow";
+    height: 40px;
+}
+.head-chat p{
+    font-size: 20px;
+    position: relative;
+    left: 10%;
+    margin-top: 15px;
+}
+.send{
+    position: absolute;
+    left: 10px;
+}
+.labelchat{
+    color: white;
+    background-color: rgba(30, 39, 46,1.0);
+}
+
+/*------------ matricula ------------*/
+.matricula{
+    position: relative;
+    left: 40%;
+    width: 200px;
+    top: 80px;
+    font-size: 18px;
+}
+.form-mat h4{
+    width: 400px;
+    color: white;
+    padding: 10px;
+    margin-top: 100px;
+    margin-left: 33%;
+    border-radius: 20px 20px 20px 20px;
+    background-color: rgba(30, 39, 46,1.0);
+    text-align: center;
+}
+.table{
+    margin-top: 50px;
+}
+.avancar{                     /*botao*/
+    border: 3px solid black;
+    position: relative;
+    top: 30px;
+    font-size: 18px;
+    left: 75%;
+    height: 50px;
+    width: 130px;
+}
+
+/*---------------calendário----------------*/
+.box3{
+    width: 400px;
+    position: absolute;
+    right: 130px;
+    border: 3px solid rgba(30, 39, 46,1.0);
+    border-radius: 3px 3px 3px 3px;
+}
+.botao1{
+    position: relative;
+    right: 30px;
+}
+.botao2{
+    position: relative;
+    left: 30px;
+}
+.notas, .faltas, .form-mat{
+     position: static;   
+}
+.tb, .headtb{
+    text-align: center;
+}
+.headtb{
+    background-color: rgba(30, 39, 46,1.0);
+    color: whitesmoke;
+}
+.headtb:hover b{
+    color: whitesmoke;
+}
+.form{
+    margin-left: 50%;
+}
+.form input{
+    height: 25px;
+    width: 25px;
+}
+.voltar, .botaoavancar{
+    height: 50px;
+}
+.btsair{
+    position: absolute;
+    top: 30px;
+    right: 5%;
+}
+.title{
+    font-family: Helvetica, Arial, sans-serif;
+    color: rgba(30, 39, 46,1.0);
+    text-align: center;
+}
+.title h2{
+    margin-top: 100px;
+    border-radius: 20px 20px 20px 20px;
+    background-color: rgba(30, 39, 46,1.0);
+    font-size: 40px;
+    color: white;
+}
+.out{
+    font-family: "Segoe UI";
+}
+@font-face{
+    font-family: "The Childrow";
+  src: url("../fonts/TheChildrow.otf");
+}
+.tb p{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px 20px 20px 20px;
+   margin-left: 45%;
+ }
+.tb img{
+    margin-top: 8px;
+    border-radius: 15px 15px 15px 15px;
+    background-color: white;
+    width: 25px;
+}
+.teste{
+    position: relative;
+    top: 200px;
+}
+.tb td{
+    border: 1px solid black;
+}
+.tb td{
+    color: white;
+}
+.tb{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.tb:hover{
+    background-color: rgba(30, 39, 46,0.8);
+}
+.tb:hover b{
+    color: white;
+}
+
+.box{
+    position: absolute;
+    top: 380px;
+    left: 150px;
+    border: 3px solid rgba(30, 39, 46,1.0);
+    border-radius: 3px 3px 3px 3px;
+}
+.botao5{
+    border: 2px solid white;
+    margin-left: 35px;
+    font-weight: bold;
+    background-color: rgba(30, 39, 46,1.0);
+    color: white;
+}
+.boleto{
+    margin-bottom: 200px;
+}
+.topo{
+    margin-left: 45%;
+    margin-top: 80px;
+    border: 5px solid black;
+    height: 70px;
+    width: 200px;
+}
+.topo a{
+    text-decoration: none;
+    color: black;
+}
+
+/*------------------------------------------------*/
+
+.exportar{
+    position: relative;
+    bottom: 0px;
+    left: 85%;
+}
+.dropmenu{
+    transition: background-color 0.5s;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.dropmenu:hover{
+    background-color: rgba(30, 39, 46,1.0);
+}
+
+.dropmenu .dropdown-item{
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s;
+}
+.dropmenu .dropdown-item: hover{
+    background-color: rgba(30, 39, 46,1.0);
+}
+.navbar{
+    margin-top: 50px;
+    background-color: rgba(30, 39, 46,1.0);
+}
+.navbar .dropdown{
+    padding-lef: 10px;
+}
+.dropmenu2 .item{
+    text-align: center;
+}
+/*-----------------------modulo professor-------------------------*/
+
+.mb-3 {
+  width: 300px;
+  margin-left: 10px;
+  margin-top: 25px;
+}
+
+.headersection {
+    border: 5px solid black;
+    border-radius: 100px 100px 100px 100px;
+  position: relative;
+  margin-top: -16px;
+  background-color: rgba(30, 39, 46, 0.8);
+  color: white;
+  width: 60%;
+  height: 200px;
+  left: 20%;
+}
+.headersection h1{
+    margin-top: 15px;
+}
+.image5 {
+  width: auto;
+  height: 580px;
+  top: 180px;
+  position: relative;
+}
+.ok{
+    width: 90px;
+    position: relative;
+    top: -290px;
+    left: 400px;
+    border: 5px solid rgba(30, 39, 46, 1);
+    border-radius: 45px 45px 45px 45px;
+     background-color: rgba(30, 39, 46, 1);
+
+}
+.textsection {
+    position: relative;
+  text-align: center;
+  border-radius: 50px 50px 50px 50px;
+  width: 30%;
+  font-size: 50px;
+  margin-left: 20px;
+  margin-top: 120px;
+  background-color: rgba(255, 255, 255, 0.7);
+
+}
+.labelcontact {
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  border: 3px solid black;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.labelcontact2 {
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  border: 3px solid black;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+  height: 120px;
+}
+.labelcontact3 {
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  border: 3px solid black;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 300px;
+  box-sizing: border-box;
+  outline: 0;
+  height: 40px;
+  text-align: center;
+}
+
+.labelcontact4 {
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  border: 3px solid black;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+  height: 60px;
+  text-align: left;
+  margin-top: 60px;
+}
+
+.footerend {
+  text-align: end;
+  float: right;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+}
+.distancia {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.distancia2 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+  margin-right: 0;
+  padding: 0;
+  display: inline-block;
+  justify-content: space-evenly;
+}
+
+.center {
+  text-align: center;
+  margin-bottom: 5px;
+  text-decoration: underline;
+}
+
+.centertitle {
+  text-align: center;
+  font-size: 50px;
+}
+
+.formcontainer {
+    border: 3px solid black;
+    border-radius: 50px 50px 50px 50px;
+    background-color: white;
+    position: relative;
+    top: 50px;
+  display: inline-block;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.formcontainer h3{
+    background-color: rgba(22, 160, 133,1.0);
+    border-radius: 5px 5px 5px 5px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bolder
+
+}
+.formafter {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 100px;
+  width: 100%;
+}
+.buttonformat {
+  border: 2px solid black;
+  text-align: center;
+  width: 100%;
+  border-radius: 5px;
+  font-weight: bolder
+}
+.buttonformat:hover{
+  border: 2px solid black;
+}
+.botao0{
+    border: 3px solid black;
+    position: relative;
+    top: 8px;
+    font-size: 18px;
+    height: 50px;
+    width: 130px;
+}
+.row8 h3{
+     font-family: Helvetica, Arial, sans-serif;
+    color: white;
+    font-size: 26px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.row8 .labelcontact2{
+    height: 200px;
+}
+.formprof{
+    height: 400px;
+}
+.bg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.bg2{
+     background-color: rgba(0, 0, 0, 0.3);
+     height: 1300px;
+}
+.distancia form, .distancia h2{
+     background-color: rgba(30, 39, 46,1.0);
+     border-radius: 5px 5px 5px 5px;
+    color: white;
+    width: 550px;
+    position: relative;
+    left: 30%;
+}
+section{
+    margin-top: 50px;
+}
