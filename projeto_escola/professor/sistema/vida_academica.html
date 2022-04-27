@@ -47,14 +47,12 @@
                     <b>Relatório</b>
                   </a>
                   <a href="#atividades_extras">
-                    <b>Atividades Extras</b>
+                    <b>Materiais</b>
                   </a>
                   <a href="#faltas">
                     <b>Faltas</b>
                   </a>
-                  <a href="#materiais">
-                    <b>Materiais</b>
-                  </a>
+                  
                 </li>
               </ul>
             </li>
@@ -102,10 +100,13 @@
           <h2 id="atividades_extras">Inserir material para aluno(s)</h2>
           <div class="center">
             <form action="#" method="post">
-            <input class="labelcontact4" type="text" name="aluno_material" id="aluno_material" placeholder="Insira o nome do aluno" />
-            <br />
-            <br />
-            <input type="file" name="material" id="material" />
+              <input class="labelcontact4" type="text" name="aluno_material" id="aluno_material" placeholder="Insira o nome do aluno" />
+              
+              <input class="labelcontact4" type="text" name="matricula_aluno" id="matricula_aluno" placeholder="Insira a matrícula do aluno" />
+              <br />
+              <input class="labelcontact5" type="text" name="materia_atvd" id="materia_atvd" placeholder="Informa a matéria da atividade" />
+              <br>
+              <input type="file" name="material" id="material" />
             <br>
             <br>
             <button type="submit" class="btn btn-warning btmatricular">Inserir material</button>
@@ -117,8 +118,10 @@
           <h2 id="faltas">Registrar frequência do(s) aluno(s)</h2>
           <div class="center">
             <form action="#" method="post">
-            <input class="labelcontact4" type="text" name="aluno_frequencia" id="aluno_frequencia" placeholder="Insira o nome do aluno" />
-            <input type="radio" name="frequentou" id="sim" value="frequencia" checked />
+            <input class="labelcontact4" type="text" name="aluno_frequencia" id="aluno_frequencia" placeholder="Insira a matrícula do aluno" />
+            <input class="labelcontact4" type="text" name="aluno_frequencia" id="aluno_frequencia" placeholder="Informe a matéria" />
+            <br>
+              <input type="radio" name="frequentou" id="sim" value="frequencia" checked />
             <label for="frequencia">PRESENTE</label>
             <input type="radio" name="frequentou" id="nao" value="frequencia" />
             <label for="frequencia">FALTOU</label>
@@ -136,11 +139,12 @@
           <div class="center">
             <form id="button1" action="" method="post">
             <input class="labelcontact4" type="text" name="aluno_nota" id="aluno_nota" placeholder="Insira o nome do aluno" />
-            <br />
+            
             <input class="labelcontact4" type="number" name="nota" id="nota" placeholder="Nota do aluno" />
             <br />
             <input class="labelcontact4" type="number" name="prova" id="prova" placeholder="Número da prova" />
-            <br />
+            <input class="labelcontact4" type="number" name="prova" id="prova" placeholder="Informe a matéria" />
+            
             <button type="submit" class="btn btn-warning btmatricular">Registrar</button>
           </form>
         </div>
