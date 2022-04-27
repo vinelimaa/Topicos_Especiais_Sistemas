@@ -82,7 +82,7 @@ h1 {
   text-shadow: 4px 4px 8px black;
   font-family: "Segoe UI";
   font-size: 19px;
-  padding: 10px 35px;
+  padding: 10px 30px;
   text-decoration: none;
   display: flex;
 }
@@ -124,6 +124,9 @@ h1 {
 }
 .espaco {
   width: 300px;
+}
+.espaco2{
+  width: 50px;
 }
 /*menu caixa de entrada-------------------------*/
 .empty {
