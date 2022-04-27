@@ -125,7 +125,7 @@ h1 {
 .espaco {
   width: 300px;
 }
-.espaco2{
+.espaco2 {
   width: 50px;
 }
 /*menu caixa de entrada-------------------------*/
@@ -645,13 +645,17 @@ footer {
 }
 
 .distancia2 {
-  margin-bottom: 150px;
+  margin-bottom: 50px;
+  margin-top: 50px;
   border-radius: 5px 5px 5px 5px;
   color: white;
-  position: relative;
-  justify-content: space-evenly;
-  width: 100%;
-  text-align: center;
+  width: 30%;
+  display: inline-block;
+  margin-left: 45px;
+}
+
+.distanciaA {
+  margin-left: 45px;
 }
 
 .center {
@@ -682,6 +686,8 @@ footer {
   font-size: 20px;
   text-decoration: none;
   font-weight: bolder;
+  width: max-content;
+  text-align: center;
 }
 .formafter {
   background-color: rgba(0, 0, 0, 0.5);
