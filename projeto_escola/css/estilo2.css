@@ -633,18 +633,22 @@ footer {
   height: 30px;
 }
 .distancia {
-  margin-top: 150px;
+  display: inline-block;
   margin-bottom: 150px;
+  background-color: rgba(30, 39, 46, 1);
+  width: 50%;
+  height: auto;
+  text-align: center;
 }
 
 .distancia2 {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-left: 100px;
-  margin-right: 0;
-  padding: 0;
-  display: inline-block;
+  margin-bottom: 150px;
+  border-radius: 5px 5px 5px 5px;
+  color: white;
+  position: relative;
   justify-content: space-evenly;
+  width: 100%;
+  text-align: center;
 }
 
 .center {
