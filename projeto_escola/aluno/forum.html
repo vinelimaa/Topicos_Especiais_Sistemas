@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../css/estilo2.css">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<title>Home - Responsáveis</title>
+</head>
+<body>
+	<div class="bg">
+		<div class="header">
+		<div class="head">
+			<div class="modulo2"><img src="../img/aluno.png"><b>Módulo: Aluno</b></div>
+		<div class="btsair"><a href="../login.html" class="btn btn-outline-light out">Sair do sistema</a></div>
+	</div>
+	<div class="menubar">
+		<ul class="menu-dropdown">
+			<li class="md-item">
+	            <a href=""><b>Matrícula</b></a>
+	            	<ul class="submenu-dropdown">
+			            <li class="sd-item">
+			            	<a href="atividades.html"><b>Atividades Extras</b></a>
+			            </li>
+			        </ul>     
+			</li>
+
+			<li class="md-item">
+			   	<a href="#"><b>Vida Acadêmica</a>
+			       	<ul class="submenu-dropdown">
+			            <li class="sd-item">                        
+			                <a href="calendario/abril.html">Provas</a> 
+			                <a href="aulas.html">Aulas</a> 
+			            </li>
+			        </ul>
+			</li>
+				<div class="espaco"></div>
+			</ul>
+			<ul class="menu-dropdown">
+			<li class="md-item">
+	            <a href="material.html"><b>Material</b></a>
+	        </li>
+	        <li class="md-item">
+	            <a href="forum.html"><b>Fórum</b></a>
+	        </li>
+		</ul>
+	</div>
+	<div class="headcircle"><a class="logo" href="index.html"><b>SCHOOL</b></a></div>
+	</div>
+
+	<div class="row row2">
+      <div class="col-4"></div>
+      <div class="col-4 title">
+        <p>
+          <h2>Fórum</h2>
+        </p>
+      </div>
+      <div class="col-4"></div>
+    </div>
+
+	<div class="py-12 px-4 flex justify-center items-center w-full">
+            <!-- Desktop and Ipad Screen size -->
+            <div class="hidden md:block shadow  overflow-y-auto">
+                <table class="w-full whitespace-nowrap">
+                    <thead class="w-full" >
+                        <tr class="focus:outline-none h-16 w-full text-base    leading-4 text-white bg-gray-800 ">
+                            <th class="pl-4 rounded-tl ">
+                            </th>
+                            <th class="font-semibold pl-10  ">
+                                <div data class="cursor-pointer relative flex justify-center items-center">
+                                <input id='main' placeholder="check box" type="checkbox" class=" cursor-pointer relative appearance-none w-4 h-4 border-gray-300 border  bg-transparent rounded"  />
+                                <svg class="hidden absolute" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.5 2L3 6L1.5 4.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            </div>
+                        </th>
+                            <th class="text-left"><span class="pl-6 pr-32 "> Mensagem</span></th>
+                            <th class="text-left font-semibold pl-4 pr-14"> Assunto</th>
+                            
+                            <th class="text-left font-semibold pl-4 pr-14"> Data</th>
+                            <th class="text-left font-semibold pl-4 pr-14"> Professores</th>
+                            
+                            <th class="pr-6 rounded-tr">
+    
+                            </th> 
+                        </tr>
+                    </thead>
+                    <tbody class="forum">
+                        <tr class="h-16 w-full text-sm leading-4 text-gray-800 hover:bg-gray-100">
+                            <td class="pl-4">
+                                <button>
+                                <svg  width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55806 0.808058C9.80214 0.563981 10.1979 0.563981 10.4419 0.808058L13.5669 3.93306C13.811 4.17714 13.811 4.57286 13.5669 4.81694C13.3229 5.06102 12.9271 5.06102 12.6831 4.81694L10 2.13388L7.31694 4.81694C7.07286 5.06102 6.67714 5.06102 6.43306 4.81694C6.18898 4.57286 6.18898 4.17714 6.43306 3.93306L9.55806 0.808058Z" fill="#4B5563"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99997 0.625C10.3451 0.624985 10.625 0.904794 10.625 1.24997L10.6258 18.75C10.6258 19.0951 10.346 19.375 10.0008 19.375C9.65563 19.375 9.3758 19.0952 9.37578 18.75L9.375 1.25003C9.37498 0.90485 9.65479 0.625015 9.99997 0.625Z" fill="#4B5563"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.43306 15.1831C6.67714 14.939 7.07286 14.939 7.31694 15.1831L10 17.8661L12.6831 15.1831C12.9271 14.939 13.3229 14.939 13.5669 15.1831C13.811 15.4271 13.811 15.8229 13.5669 16.0669L10.4419 19.1919C10.1979 19.436 9.80214 19.436 9.55806 19.1919L6.43306 16.0669C6.18898 15.8229 6.18898 15.4271 6.43306 15.1831Z" fill="#4B5563"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1831 6.43306C15.4271 6.18898 15.8229 6.18898 16.0669 6.43306L19.1919 9.55806C19.436 9.80214 19.436 10.1979 19.1919 10.4419L16.0669 13.5669C15.8229 13.811 15.4271 13.811 15.1831 13.5669C14.939 13.3229 14.939 12.9271 15.1831 12.6831L17.8661 10L15.1831 7.31694C14.939 7.07286 14.939 6.67714 15.1831 6.43306Z" fill="#4B5563"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.81694 6.43306C5.06102 6.67714 5.06102 7.07286 4.81694 7.31694L2.13388 10L4.81694 12.6831C5.06102 12.9271 5.06102 13.3229 4.81694 13.5669C4.57286 13.811 4.17714 13.811 3.93306 13.5669L0.808058 10.4419C0.563981 10.1979 0.563981 9.80214 0.808058 9.55806L3.93306 6.43306C4.17714 6.18898 4.57286 6.18898 4.81694 6.43306Z" fill="#4B5563"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.625 10C0.625 9.65482 0.904822 9.375 1.25 9.375H18.75C19.0952 9.375 19.375 9.65482 19.375 10C19.375 10.3452 19.0952 10.625 18.75 10.625H1.25C0.904822 10.625 0.625 10.3452 0.625 10Z" fill="#4B5563"/>
+                                </svg>
+                            </button>
+                                </td>
+                            <td class="pl-10">
+                                <div data class="cursor-pointer relative flex justify-center items-center">
+                                    <input placeholder="check box" type="checkbox" class=" cursor-pointer relative appearance-none w-4 h-4 border-gray-300 border  bg-black rounded"  />
+                                    <svg class="hidden absolute" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.5 2L3 6L1.5 4.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                </div>
+                            </td>
+                            <td class="pl-6 pr-32 ">
+                                você pode acessar o material de estudo aqui pelo sistema, em vida acadêmica e depois em material.
+                            </td>
+                            <td class="  pl-4 pr-14">
+                                re/ onde fica o material de estudo?
+                            </td>
+                            <td class="  pl-4 pr-14">
+                                09/10/2021
+                            </td>
+                           
+                            <td class="  pl-4 pr-14">
+                                Prof Paulo
+                            </td>  
+                            
+                            <td class="pr-6 relative">
+                                <button onclick="show('dropdown1')">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.25 12C2.25 17.3845 6.61547 21.75 12 21.75C17.3845 21.75 21.75 17.3845 21.75 12C21.75 6.61547 17.3845 2.25 12 2.25C6.61547 2.25 2.25 6.61547 2.25 12ZM13.2188 16.2188C13.2188 16.4598 13.1473 16.6954 13.0134 16.8959C12.8794 17.0963 12.6891 17.2525 12.4664 17.3447C12.2437 17.437 11.9986 17.4611 11.7622 17.4141C11.5258 17.3671 11.3087 17.251 11.1382 17.0805C10.9678 16.9101 10.8517 16.6929 10.8047 16.4565C10.7576 16.2201 10.7818 15.9751 10.874 15.7524C10.9663 15.5297 11.1225 15.3393 11.3229 15.2054C11.5233 15.0715 11.759 15 12 15C12.3232 15 12.6332 15.1284 12.8618 15.357C13.0903 15.5855 13.2188 15.8955 13.2188 16.2188ZM13.2188 12C13.2188 12.241 13.1473 12.4767 13.0134 12.6771C12.8794 12.8775 12.6891 13.0337 12.4664 13.126C12.2437 13.2182 11.9986 13.2424 11.7622 13.1953C11.5258 13.1483 11.3087 13.0322 11.1382 12.8618C10.9678 12.6913 10.8517 12.4742 10.8047 12.2378C10.7576 12.0014 10.7818 11.7563 10.874 11.5336C10.9663 11.3109 11.1225 11.1206 11.3229 10.9866C11.5233 10.8527 11.759 10.7812 12 10.7812C12.3232 10.7812 12.6332 10.9097 12.8618 11.1382C13.0903 11.3668 13.2188 11.6768 13.2188 12ZM13.2188 7.78125C13.2188 8.0223 13.1473 8.25793 13.0134 8.45835C12.8794 8.65877 12.6891 8.81498 12.4664 8.90723C12.2437 8.99947 11.9986 9.02361 11.7622 8.97658C11.5258 8.92956 11.3087 8.81348 11.1382 8.64304C10.9678 8.47259 10.8517 8.25543 10.8047 8.01902C10.7576 7.7826 10.7818 7.53755 10.874 7.31485C10.9663 7.09216 11.1225 6.90181 11.3229 6.7679C11.5233 6.63398 11.759 6.5625 12 6.5625C12.3232 6.5625 12.6332 6.6909 12.8618 6.91946C13.0903 7.14802 13.2188 7.45802 13.2188 7.78125Z" fill="#1F2937"/>
+                                    </svg>
+                                </button>
+                                <div id="dropdown1" class="hidden z-10 right-7 bg-white top-12 absolute flex justify-start flex-col p-1.5 w-40 rounded-md shadow-md">
+                                    <button onclick="show('dropdown1')" class="text-sm tracking-wider text-left rounded hover:bg-blue-50 w-full p-1.5  text-gray-800">
+                                        Edit
+                                    </button>
+                                    
+                                    
+                                    <hr class="border-gray-100 w-full">
+                                    <button onclick="show('dropdown1')" class="text-sm tracking-wider text-left rounded hover:bg-blue-50 w-full p-1.5  text-red-700">
+                                        Delete
+                                    </button>
+                                </div>
+                            </td> 
+                        </tr>
+                        <tr class="h-16 w-full text-sm leading-4 text-gray-800 hover:bg-gray-100">
+                            <td class="pl-4">
+                                <button>
+                                <svg  width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55806 0.808058C9.80214 0.563981 10.1979 0.563981 10.4419 0.808058L13.5669 3.93306C13.811 4.17714 13.811 4.57286 13.5669 4.81694C13.3229 5.06102 12.9271 5.06102 12.6831 4.81694L10 2.13388L7.31694 4.81694C7.07286 5.06102 6.67714 5.06102 6.43306 4.81694C6.18898 4.57286 6.18898 4.17714 6.43306 3.93306L9.55806 0.808058Z" fill="#4B5563"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99997 0.625C10.3451 0.624985 10.625 0.904794 10.625 1.24997L10.6258 18.75C10.6258 19.0951 10.346 19.375 10.0008 19.375C9.65563 19.375 9.3758 19.0952 9.37578 18.75L9.375 1.25003C9.37498 0.90485 9.65479 0.625015 9.99997 0.625Z" fill="#4B5563"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.43306 15.1831C6.67714 14.939 7.07286 14.939 7.31694 15.1831L10 17.8661L12.6831 15.1831C12.9271 14.939 13.3229 14.939 13.5669 15.1831C13.811 15.4271 13.811 15.8229 13.5669 16.0669L10.4419 19.1919C10.1979 19.436 9.80214 19.436 9.55806 19.1919L6.43306 16.0669C6.18898 15.8229 6.18898 15.4271 6.43306 15.1831Z" fill="#4B5563"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1831 6.43306C15.4271 6.18898 15.8229 6.18898 16.0669 6.43306L19.1919 9.55806C19.436 9.80214 19.436 10.1979 19.1919 10.4419L16.0669 13.5669C15.8229 13.811 15.4271 13.811 15.1831 13.5669C14.939 13.3229 14.939 12.9271 15.1831 12.6831L17.8661 10L15.1831 7.31694C14.939 7.07286 14.939 6.67714 15.1831 6.43306Z" fill="#4B5563"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.81694 6.43306C5.06102 6.67714 5.06102 7.07286 4.81694 7.31694L2.13388 10L4.81694 12.6831C5.06102 12.9271 5.06102 13.3229 4.81694 13.5669C4.57286 13.811 4.17714 13.811 3.93306 13.5669L0.808058 10.4419C0.563981 10.1979 0.563981 9.80214 0.808058 9.55806L3.93306 6.43306C4.17714 6.18898 4.57286 6.18898 4.81694 6.43306Z" fill="#4B5563"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.625 10C0.625 9.65482 0.904822 9.375 1.25 9.375H18.75C19.0952 9.375 19.375 9.65482 19.375 10C19.375 10.3452 19.0952 10.625 18.75 10.625H1.25C0.904822 10.625 0.625 10.3452 0.625 10Z" fill="#4B5563"/>
+                                </svg>
+                            </button>
+                                </td>
+                            <td class="pl-10">
+                                <div data class="cursor-pointer relative flex justify-center items-center">
+                                    <input placeholder="check box" type="checkbox" class=" cursor-pointer relative appearance-none w-4 h-4 border-gray-300 border  bg-black rounded"  />
+                                    <svg class="hidden absolute" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.5 2L3 6L1.5 4.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                </div>
+                            </td>
+                            <td class="pl-6 pr-32 ">
+                                Está liberado o não uso de mascarás 
+                            </td>
+                            <td class="  pl-4 pr-14">
+                                re/ ainda é obrigatório o uso de mascarás?
+                            </td>
+                            <td class="  pl-4 pr-14">
+                                14/09/2021
+                            </td>
+                           
+                            <td class="  pl-4 pr-14">
+                                Prof Gustavo
+                            </td>  
+                            
+                            <td class="pr-6 relative">
+                                <button onclick="show('dropdown1')">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.25 12C2.25 17.3845 6.61547 21.75 12 21.75C17.3845 21.75 21.75 17.3845 21.75 12C21.75 6.61547 17.3845 2.25 12 2.25C6.61547 2.25 2.25 6.61547 2.25 12ZM13.2188 16.2188C13.2188 16.4598 13.1473 16.6954 13.0134 16.8959C12.8794 17.0963 12.6891 17.2525 12.4664 17.3447C12.2437 17.437 11.9986 17.4611 11.7622 17.4141C11.5258 17.3671 11.3087 17.251 11.1382 17.0805C10.9678 16.9101 10.8517 16.6929 10.8047 16.4565C10.7576 16.2201 10.7818 15.9751 10.874 15.7524C10.9663 15.5297 11.1225 15.3393 11.3229 15.2054C11.5233 15.0715 11.759 15 12 15C12.3232 15 12.6332 15.1284 12.8618 15.357C13.0903 15.5855 13.2188 15.8955 13.2188 16.2188ZM13.2188 12C13.2188 12.241 13.1473 12.4767 13.0134 12.6771C12.8794 12.8775 12.6891 13.0337 12.4664 13.126C12.2437 13.2182 11.9986 13.2424 11.7622 13.1953C11.5258 13.1483 11.3087 13.0322 11.1382 12.8618C10.9678 12.6913 10.8517 12.4742 10.8047 12.2378C10.7576 12.0014 10.7818 11.7563 10.874 11.5336C10.9663 11.3109 11.1225 11.1206 11.3229 10.9866C11.5233 10.8527 11.759 10.7812 12 10.7812C12.3232 10.7812 12.6332 10.9097 12.8618 11.1382C13.0903 11.3668 13.2188 11.6768 13.2188 12ZM13.2188 7.78125C13.2188 8.0223 13.1473 8.25793 13.0134 8.45835C12.8794 8.65877 12.6891 8.81498 12.4664 8.90723C12.2437 8.99947 11.9986 9.02361 11.7622 8.97658C11.5258 8.92956 11.3087 8.81348 11.1382 8.64304C10.9678 8.47259 10.8517 8.25543 10.8047 8.01902C10.7576 7.7826 10.7818 7.53755 10.874 7.31485C10.9663 7.09216 11.1225 6.90181 11.3229 6.7679C11.5233 6.63398 11.759 6.5625 12 6.5625C12.3232 6.5625 12.6332 6.6909 12.8618 6.91946C13.0903 7.14802 13.2188 7.45802 13.2188 7.78125Z" fill="#1F2937"/>
+                                    </svg>
+                                </button>
+                                <div id="dropdown1" class="hidden z-10 right-7 bg-white top-12 absolute flex justify-start flex-col p-1.5 w-40 rounded-md shadow-md">
+                                    <button onclick="show('dropdown1')" class="text-sm tracking-wider text-left rounded hover:bg-blue-50 w-full p-1.5  text-gray-800">
+                                        Edit
+                                    </button>
+                                    
+                                    <button onclick="show('dropdown1')" class="text-sm tracking-wider text-left rounded hover:bg-blue-50 w-full p-1.5  text-red-700">
+                                        Delete
+                                    </button>
+                                </div>
+                            </td> 
+                        </tr>
+                        <tr class="h-16 w-full text-sm leading-4 text-gray-800 hover:bg-gray-100">
+                            <td class="pl-4">
+                                <button>
+                                <svg  width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55806 0.808058C9.80214 0.563981 10.1979 0.563981 10.4419 0.808058L13.5669 3.93306C13.811 4.17714 13.811 4.57286 13.5669 4.81694C13.3229 5.06102 12.9271 5.06102 12.6831 4.81694L10 2.13388L7.31694 4.81694C7.07286 5.06102 6.67714 5.06102 6.43306 4.81694C6.18898 4.57286 6.18898 4.17714 6.43306 3.93306L9.55806 0.808058Z" fill="#4B5563"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99997 0.625C10.3451 0.624985 10.625 0.904794 10.625 1.24997L10.6258 18.75C10.6258 19.0951 10.346 19.375 10.0008 19.375C9.65563 19.375 9.3758 19.0952 9.37578 18.75L9.375 1.25003C9.37498 0.90485 9.65479 0.625015 9.99997 0.625Z" fill="#4B5563"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.43306 15.1831C6.67714 14.939 7.07286 14.939 7.31694 15.1831L10 17.8661L12.6831 15.1831C12.9271 14.939 13.3229 14.939 13.5669 15.1831C13.811 15.4271 13.811 15.8229 13.5669 16.0669L10.4419 19.1919C10.1979 19.436 9.80214 19.436 9.55806 19.1919L6.43306 16.0669C6.18898 15.8229 6.18898 15.4271 6.43306 15.1831Z" fill="#4B5563"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1831 6.43306C15.4271 6.18898 15.8229 6.18898 16.0669 6.43306L19.1919 9.55806C19.436 9.80214 19.436 10.1979 19.1919 10.4419L16.0669 13.5669C15.8229 13.811 15.4271 13.811 15.1831 13.5669C14.939 13.3229 14.939 12.9271 15.1831 12.6831L17.8661 10L15.1831 7.31694C14.939 7.07286 14.939 6.67714 15.1831 6.43306Z" fill="#4B5563"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.81694 6.43306C5.06102 6.67714 5.06102 7.07286 4.81694 7.31694L2.13388 10L4.81694 12.6831C5.06102 12.9271 5.06102 13.3229 4.81694 13.5669C4.57286 13.811 4.17714 13.811 3.93306 13.5669L0.808058 10.4419C0.563981 10.1979 0.563981 9.80214 0.808058 9.55806L3.93306 6.43306C4.17714 6.18898 4.57286 6.18898 4.81694 6.43306Z" fill="#4B5563"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.625 10C0.625 9.65482 0.904822 9.375 1.25 9.375H18.75C19.0952 9.375 19.375 9.65482 19.375 10C19.375 10.3452 19.0952 10.625 18.75 10.625H1.25C0.904822 10.625 0.625 10.3452 0.625 10Z" fill="#4B5563"/>
+                                </svg>
+                            </button>
+                                </td>
+                            <td class="pl-10">
+                                <div data class="cursor-pointer relative flex justify-center items-center">
+                                    <input placeholder="check box" type="checkbox" class=" cursor-pointer relative appearance-none w-4 h-4 border-gray-300 border  bg-black rounded"  />
+                                    <svg class="hidden absolute" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.5 2L3 6L1.5 4.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                </div>
+                            </td>
+                            <td class="pl-6 pr-32 ">
+                               As atividades complementares serão feitas após o período de aula caso estude de manhã e antes caso estude a tarde
+                            </td>
+                            <td class="  pl-4 pr-14">
+                                re/ Qual período serão as atividades complementares
+                            </td>
+                            <td class="  pl-4 pr-14">
+                                08/05/2021
+                            </td>
+                           
+                            <td class="  pl-4 pr-14">
+                                Prof Lucas
+                            </td>  
+                            
+                            <td class="pr-6 relative">
+                                <button onclick="show('dropdown1')">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.25 12C2.25 17.3845 6.61547 21.75 12 21.75C17.3845 21.75 21.75 17.3845 21.75 12C21.75 6.61547 17.3845 2.25 12 2.25C6.61547 2.25 2.25 6.61547 2.25 12ZM13.2188 16.2188C13.2188 16.4598 13.1473 16.6954 13.0134 16.8959C12.8794 17.0963 12.6891 17.2525 12.4664 17.3447C12.2437 17.437 11.9986 17.4611 11.7622 17.4141C11.5258 17.3671 11.3087 17.251 11.1382 17.0805C10.9678 16.9101 10.8517 16.6929 10.8047 16.4565C10.7576 16.2201 10.7818 15.9751 10.874 15.7524C10.9663 15.5297 11.1225 15.3393 11.3229 15.2054C11.5233 15.0715 11.759 15 12 15C12.3232 15 12.6332 15.1284 12.8618 15.357C13.0903 15.5855 13.2188 15.8955 13.2188 16.2188ZM13.2188 12C13.2188 12.241 13.1473 12.4767 13.0134 12.6771C12.8794 12.8775 12.6891 13.0337 12.4664 13.126C12.2437 13.2182 11.9986 13.2424 11.7622 13.1953C11.5258 13.1483 11.3087 13.0322 11.1382 12.8618C10.9678 12.6913 10.8517 12.4742 10.8047 12.2378C10.7576 12.0014 10.7818 11.7563 10.874 11.5336C10.9663 11.3109 11.1225 11.1206 11.3229 10.9866C11.5233 10.8527 11.759 10.7812 12 10.7812C12.3232 10.7812 12.6332 10.9097 12.8618 11.1382C13.0903 11.3668 13.2188 11.6768 13.2188 12ZM13.2188 7.78125C13.2188 8.0223 13.1473 8.25793 13.0134 8.45835C12.8794 8.65877 12.6891 8.81498 12.4664 8.90723C12.2437 8.99947 11.9986 9.02361 11.7622 8.97658C11.5258 8.92956 11.3087 8.81348 11.1382 8.64304C10.9678 8.47259 10.8517 8.25543 10.8047 8.01902C10.7576 7.7826 10.7818 7.53755 10.874 7.31485C10.9663 7.09216 11.1225 6.90181 11.3229 6.7679C11.5233 6.63398 11.759 6.5625 12 6.5625C12.3232 6.5625 12.6332 6.6909 12.8618 6.91946C13.0903 7.14802 13.2188 7.45802 13.2188 7.78125Z" fill="#1F2937"/>
+                                    </svg>
+                                </button>
+                                <div id="dropdown1" class="hidden z-10 right-7 bg-white top-12 absolute flex justify-start flex-col p-1.5 w-40 rounded-md shadow-md">
+                                    <button onclick="show('dropdown1')" class="text-sm tracking-wider text-left rounded hover:bg-blue-50 w-full p-1.5  text-gray-800">
+                                        Edit
+                                    </button>
+                                    
+                                    <hr class="border-gray-100 w-full">
+                                    <button onclick="show('dropdown1')" class="text-sm tracking-wider text-left rounded hover:bg-blue-50 w-full p-1.5  text-red-700">
+                                        Delete
+                                    </button>
+                                </div>
+                            </td> 
+                        </tr>
+                        <tr class="h-16 w-full text-sm leading-4 text-gray-800 hover:bg-gray-100">
+                            <td class="pl-4">
+                                <button>
+                                <svg  width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55806 0.808058C9.80214 0.563981 10.1979 0.563981 10.4419 0.808058L13.5669 3.93306C13.811 4.17714 13.811 4.57286 13.5669 4.81694C13.3229 5.06102 12.9271 5.06102 12.6831 4.81694L10 2.13388L7.31694 4.81694C7.07286 5.06102 6.67714 5.06102 6.43306 4.81694C6.18898 4.57286 6.18898 4.17714 6.43306 3.93306L9.55806 0.808058Z" fill="#4B5563"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99997 0.625C10.3451 0.624985 10.625 0.904794 10.625 1.24997L10.6258 18.75C10.6258 19.0951 10.346 19.375 10.0008 19.375C9.65563 19.375 9.3758 19.0952 9.37578 18.75L9.375 1.25003C9.37498 0.90485 9.65479 0.625015 9.99997 0.625Z" fill="#4B5563"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.43306 15.1831C6.67714 14.939 7.07286 14.939 7.31694 15.1831L10 17.8661L12.6831 15.1831C12.9271 14.939 13.3229 14.939 13.5669 15.1831C13.811 15.4271 13.811 15.8229 13.5669 16.0669L10.4419 19.1919C10.1979 19.436 9.80214 19.436 9.55806 19.1919L6.43306 16.0669C6.18898 15.8229 6.18898 15.4271 6.43306 15.1831Z" fill="#4B5563"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1831 6.43306C15.4271 6.18898 15.8229 6.18898 16.0669 6.43306L19.1919 9.55806C19.436 9.80214 19.436 10.1979 19.1919 10.4419L16.0669 13.5669C15.8229 13.811 15.4271 13.811 15.1831 13.5669C14.939 13.3229 14.939 12.9271 15.1831 12.6831L17.8661 10L15.1831 7.31694C14.939 7.07286 14.939 6.67714 15.1831 6.43306Z" fill="#4B5563"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.81694 6.43306C5.06102 6.67714 5.06102 7.07286 4.81694 7.31694L2.13388 10L4.81694 12.6831C5.06102 12.9271 5.06102 13.3229 4.81694 13.5669C4.57286 13.811 4.17714 13.811 3.93306 13.5669L0.808058 10.4419C0.563981 10.1979 0.563981 9.80214 0.808058 9.55806L3.93306 6.43306C4.17714 6.18898 4.57286 6.18898 4.81694 6.43306Z" fill="#4B5563"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.625 10C0.625 9.65482 0.904822 9.375 1.25 9.375H18.75C19.0952 9.375 19.375 9.65482 19.375 10C19.375 10.3452 19.0952 10.625 18.75 10.625H1.25C0.904822 10.625 0.625 10.3452 0.625 10Z" fill="#4B5563"/>
+                                </svg>
+                            </button>
+                                </td>
+                            <td class="pl-10">
+                                <div data class="cursor-pointer relative flex justify-center items-center">
+                                    <input placeholder="check box" type="checkbox" class=" cursor-pointer relative appearance-none w-4 h-4 border-gray-300 border  bg-black rounded"  />
+                                    <svg class="hidden absolute" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.5 2L3 6L1.5 4.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                </div>
+                            </td>
+                            <td class="pl-6 pr-32 ">
+                                As aulas de Educação Física serão em sala está semana, devido a reformas nas quadras.
+                            </td>
+                            <td class="  pl-4 pr-14">
+                                Mensagem para todos
+                            </td>
+                            <td class="  pl-4 pr-14">
+                                09/4/2021
+                            </td>
+                           
+                            <td class="  pl-4 pr-14">
+                                Prof Henrique
+                            </td>  
+                            
+                            <td class="pr-6 relative">
+                                <button onclick="show('dropdown1')">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.25 12C2.25 17.3845 6.61547 21.75 12 21.75C17.3845 21.75 21.75 17.3845 21.75 12C21.75 6.61547 17.3845 2.25 12 2.25C6.61547 2.25 2.25 6.61547 2.25 12ZM13.2188 16.2188C13.2188 16.4598 13.1473 16.6954 13.0134 16.8959C12.8794 17.0963 12.6891 17.2525 12.4664 17.3447C12.2437 17.437 11.9986 17.4611 11.7622 17.4141C11.5258 17.3671 11.3087 17.251 11.1382 17.0805C10.9678 16.9101 10.8517 16.6929 10.8047 16.4565C10.7576 16.2201 10.7818 15.9751 10.874 15.7524C10.9663 15.5297 11.1225 15.3393 11.3229 15.2054C11.5233 15.0715 11.759 15 12 15C12.3232 15 12.6332 15.1284 12.8618 15.357C13.0903 15.5855 13.2188 15.8955 13.2188 16.2188ZM13.2188 12C13.2188 12.241 13.1473 12.4767 13.0134 12.6771C12.8794 12.8775 12.6891 13.0337 12.4664 13.126C12.2437 13.2182 11.9986 13.2424 11.7622 13.1953C11.5258 13.1483 11.3087 13.0322 11.1382 12.8618C10.9678 12.6913 10.8517 12.4742 10.8047 12.2378C10.7576 12.0014 10.7818 11.7563 10.874 11.5336C10.9663 11.3109 11.1225 11.1206 11.3229 10.9866C11.5233 10.8527 11.759 10.7812 12 10.7812C12.3232 10.7812 12.6332 10.9097 12.8618 11.1382C13.0903 11.3668 13.2188 11.6768 13.2188 12ZM13.2188 7.78125C13.2188 8.0223 13.1473 8.25793 13.0134 8.45835C12.8794 8.65877 12.6891 8.81498 12.4664 8.90723C12.2437 8.99947 11.9986 9.02361 11.7622 8.97658C11.5258 8.92956 11.3087 8.81348 11.1382 8.64304C10.9678 8.47259 10.8517 8.25543 10.8047 8.01902C10.7576 7.7826 10.7818 7.53755 10.874 7.31485C10.9663 7.09216 11.1225 6.90181 11.3229 6.7679C11.5233 6.63398 11.759 6.5625 12 6.5625C12.3232 6.5625 12.6332 6.6909 12.8618 6.91946C13.0903 7.14802 13.2188 7.45802 13.2188 7.78125Z" fill="#1F2937"/>
+                                    </svg>
+                                </button>
+                                <div id="dropdown1" class="hidden z-10 right-7 bg-white top-12 absolute flex justify-start flex-col p-1.5 w-40 rounded-md shadow-md">
+                                    <button onclick="show('dropdown1')" class="text-sm tracking-wider text-left rounded hover:bg-blue-50 w-full p-1.5  text-gray-800">
+                                        abrir
+                                    </button>
+                                    
+                                    <hr class="border-gray-100 w-full">
+                                    <button onclick="show('dropdown1')" class="text-sm tracking-wider text-left rounded hover:bg-blue-50 w-full p-1.5  text-red-700">
+                                        Delete
+                                    </button>
+                                </div>
+                            </td> 
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+         
+        </div>
+       
+        <script>
+            var main = document.querySelectorAll("[data]")
+            for(i=0 ; i < main.length ; i++) {
+                let menu = main[i];
+                menu.addEventListener('click', () => {
+                   let svg = menu.children[1]
+                   let input = menu.children[0]
+                   if(input.id === 'main'){
+                      for(j=0 ; j<=  main.length ; j++){
+                        main[j].children[1].classList.toggle("hidden")
+                        main[j].children[0].classList.toggle("bg-blue-700")
+                      }
+                   }
+                    svg.classList.toggle("hidden")
+                    input.classList.toggle("bg-blue-700")     
+                })
+            }
+    
+            show = (dropdownID) => {
+                document.getElementById(dropdownID).classList.toggle("hidden");
+            } 
+        </script>
+    
+    
+    <div class="msg">
+        
+        <div class="w-full flex items-center justify-center my-12">
+            <div class="forum2">
+                <p class="md:text-3xl text-xl font-bold leading-7 text-center text-gray-700 dark:text-white">Mande uma mensagem para os professores!</p>
+                <div class="md:flex items-center mt-12">
+                    <div class="md:w-72 flex flex-col">
+                        <div>
+                        <label class="text-base font-semibold leading-none text-gray-800 dark:text-white">Nome</label>
+                        </div>
+                        <div>
+                        <input tabindex="0" arial-label="Please input name" type="name" class="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100" placeholder="digite o seu nome" />
+                        </div>
+                    </div>
+                    <div class="md:w-72 flex flex-col md:ml-6 md:mt-0 mt-4">
+                        <div class="label">
+                        <label class="text-base font-semibold leading-none text-gray-800 dark:text-white">Destinatário</label>
+                        </div>
+                        <div class="input">
+                        <select>
+                            <option>Prof Paulo</option>
+                            <option>Prof Gustavo</option>
+                            <option>Prof Antonio</option>
+                            <option>Prof Lucas</option>
+                            <option>Prof Augusto</option>
+                            <option>Prof Henrique</option>
+                        </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:flex items-center mt-8">
+                    <div class="md:w-72 flex flex-col">
+                        <div>
+                        <label class="text-base font-semibold leading-none text-gray-800 dark:text-white">Assunto</label>
+                        </div>
+                        <div>
+                        <input  placeholder="Digite o assunto" />
+                        </div>
+                    </div>
+                   
+                </div>
+                <div>
+                    <div class="w-full flex flex-col mt-8">
+                        <label class="text-base font-semibold leading-none text-gray-800 dark:text-white">Menssagem</label>
+                        <textarea tabindex="0" aria-label="leave a message" role="textbox" type="name" class="h-36 text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100 resize-none"></textarea>
+                    </div>
+                </div>
+                
+                <div class="flex items-center justify-center w-full">
+                    <button class="mt-9 text-base font-semibold leading-none text-white py-4 px-10 bg-indigo-700 rounded hover:bg-indigo-600 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 focus:outline-none">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>	
+	</div>
+	
+</body>
+</html>
