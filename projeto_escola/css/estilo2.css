@@ -692,7 +692,7 @@ footer {
 .buttonformat {
   border: 2px solid black;
   text-align: center;
-  width: 100%;
+  width: 300px;
   border-radius: 5px;
   font-weight: bolder;
 }
