@@ -473,7 +473,7 @@ p {
   background-color: rgba(30, 39, 46, 1);
 }
 .navbar .dropdown {
-  padding-lef: 10px;
+  padding-left: 10px;
 }
 .dropmenu2 .item {
   text-align: center;
@@ -718,8 +718,27 @@ footer {
   padding: 25px;
   display: inline-block;
 }
+/* <<<<<<< HEAD */
 .materiais img {
   margin-left: 35px;
   width: 250px;
   border: 5px solid white;
+}
+.materiais img {
+  margin-left: 35px;
+  width: 250px;
+  border: 5px solid black;
+}
+.forum {
+  background-color: white;
+}
+.forum2 p {
+  color: white;
+}
+.forum2 label {
+  color: white;
+  font-size: 18px;
+}
+.msg {
+  background-color: rgba(30, 39, 46, 1);
 }
