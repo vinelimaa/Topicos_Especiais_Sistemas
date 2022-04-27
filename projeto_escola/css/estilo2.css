@@ -654,6 +654,18 @@ footer {
   margin-left: 3%;
 }
 
+.distancia3 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 25%;
+  margin-right: 0;
+  padding: 0;
+  color: white;
+  display: inline-block;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
 .distanciaA {
   margin-left: 45px;
 }
