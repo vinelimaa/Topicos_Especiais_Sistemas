@@ -71,81 +71,87 @@
       </div>
       <section>
         <div class="distanciaUP">
-          <div class="row row2">
-            <div class="col-4"></div>
-            <div class="col-4 title">
-              <p>
-              <h2>Vida Acadêmica</h2>
-              </p>
-            </div>
-            <div class="col-4"></div>
+        <div class="row row2">
+          <div class="col-4"></div>
+          <div class="col-4 title">
+            <p>
+            <h2>Vida Acadêmica</h2>
+            </p>
           </div>
-        </div>
-          <!--  de relatórios sobre a evolução dos meus alunos, de forma individual e por grupos, porque assim posso avaliar a efetividade das aulas e necessidades e aulas de recuperação ou reciclagem.-->
-          <div class="distancia2">
-          <div class="distancia">
-            <h2 id="notas">Relatórios do(s) Aluno(s)</h2>
-            <div class="center">
-              <form action="#" method="get">
-                <input class="labelcontact4" type="text" placeholder="Insira o nome do aluno">
-                <input class="labelcontact4" type="text" placeholder="Insira a matrícula do aluno">
-              <br />
-              <br />
-                <button type="submit" class="btn btn-warning btmatricular">Buscar relatório</button>
-              </form>
-            </div>
-          </div>
-            <!--  Postar material de estudo para meus alunos, e até material específico para cada aluno, caso seja necessário, para que o meu aluno tenha fácil acesso ao material a ser estudado.  -->
-            <div class="distancia">
-            <h2 id="atividades_extras">Inserir material para aluno(s)</h2>
-            <div class="center">
-              <form action="#" method="post">
-              <input class="labelcontact4" type="text" name="aluno_material" id="aluno_material" placeholder="Insira o nome do aluno" />
-              <br />
-              <br />
-              <input type="file" name="material" id="material" />
-              <br>
-              <br>
-              <button type="submit" class="btn btn-warning btmatricular">Inserir material</button>
-            </form>
-          </div>
-          </div>
-            <!--  Registrar a frequência dos meus alunos, evitando assim manuseio de papel para controle de presença e faltas.  -->
-            <div class="distancia">
-            <h2 id="faltas">Registrar frequência do(s) aluno(s)</h2>
-            <div class="center">
-              <form action="#" method="post">
-              <input class="labelcontact4" type="text" name="aluno_frequencia" id="aluno_frequencia" placeholder="Insira o nome do aluno" />
-              <input type="radio" name="frequentou" id="sim" value="frequencia" checked />
-              <label for="frequencia">PRESENTE</label>
-              <input type="radio" name="frequentou" id="nao" value="frequencia" />
-              <label for="frequencia">FALTOU</label>
-              <br />
-              <br />
-              <button type="submit" class="btn btn-warning btmatricular">Registrar</button>
-  
-            
-            </form>
-          </div>
-        </div>
-            <!--  Registrar as notas obtidas pelos meus alunos, para manter o controle de aprovação e reprovação. -->
-            <div class="distancia">
-            <h2 id="provas">Registrar notas de alunos</h2>
-            <div class="center">
-              <form id="button1" action="" method="post">
-              <input class="labelcontact4" type="text" name="aluno_nota" id="aluno_nota" placeholder="Insira o nome do aluno" />
-              <br />
-              <input class="labelcontact4" type="number" name="nota" id="nota" placeholder="Nota do aluno" />
-              <br />
-              <input class="labelcontact4" type="number" name="prova" id="prova" placeholder="Número da prova" />
-              <br />
-              <button type="submit" class="btn btn-warning btmatricular">Registrar</button>
-            </form>
-          </div>
-        </div>
-        </div>
+          <div class="col-4"></div>
         </div>
       </div>
+        <!--  de relatórios sobre a evolução dos meus alunos, de forma individual e por grupos, porque assim posso avaliar a efetividade das aulas e necessidades e aulas de recuperação ou reciclagem.-->
+        <div class="distancia2">
+        <div class="distancia">
+          <h2 id="notas">Relatórios do(s) Aluno(s)</h2>
+          <div class="center">
+            <form action="#" method="get">
+              <input class="labelcontact4" type="text" placeholder="Insira o nome do aluno">
+              <input class="labelcontact4" type="text" placeholder="Insira a matrícula do aluno">
+            <br />
+            <br />
+              <button type="submit" class="btn btn-warning btmatricular">Buscar relatório</button>
+            </form>
+          </div>
+        </div>
+          <!--  Postar material de estudo para meus alunos, e até material específico para cada aluno, caso seja necessário, para que o meu aluno tenha fácil acesso ao material a ser estudado.  -->
+          <div class="distancia">
+          <h2 id="atividades_extras">Inserir material para aluno(s)</h2>
+          <div class="center">
+            <form action="#" method="post">
+              <input class="labelcontact4" type="text" name="aluno_material" id="aluno_material" placeholder="Insira o nome do aluno" />
+              
+              <input class="labelcontact4" type="text" name="matricula_aluno" id="matricula_aluno" placeholder="Insira a matrícula do aluno" />
+              <br />
+              <input class="labelcontact5" type="text" name="materia_atvd" id="materia_atvd" placeholder="Informa a matéria da atividade" />
+              <br>
+              <input type="file" name="material" id="material" />
+            <br>
+            <br>
+            <button type="submit" class="btn btn-warning btmatricular">Inserir material</button>
+          </form>
+        </div>
+        </div>
+          <!--  Registrar a frequência dos meus alunos, evitando assim manuseio de papel para controle de presença e faltas.  -->
+          <div class="distancia">
+          <h2 id="faltas">Registrar frequência do(s) aluno(s)</h2>
+          <div class="center">
+            <form action="#" method="post">
+            <input class="labelcontact4" type="text" name="aluno_frequencia" id="aluno_frequencia" placeholder="Insira a matrícula do aluno" />
+            <input class="labelcontact4" type="text" name="aluno_frequencia" id="aluno_frequencia" placeholder="Informe a matéria" />
+            <br>
+              <input type="radio" name="frequentou" id="sim" value="frequencia" checked />
+            <label for="frequencia">PRESENTE</label>
+            <input type="radio" name="frequentou" id="nao" value="frequencia" />
+            <label for="frequencia">FALTOU</label>
+            <br />
+            <br />
+            <button type="submit" class="btn btn-warning btmatricular">Registrar</button>
+
+          
+          </form>
+        </div>
+      </div>
+          <!--  Registrar as notas obtidas pelos meus alunos, para manter o controle de aprovação e reprovação. -->
+          <div class="distancia">
+          <h2 id="provas">Registrar notas de alunos</h2>
+          <div class="center">
+            <form id="button1" action="" method="post">
+            <input class="labelcontact4" type="text" name="aluno_nota" id="aluno_nota" placeholder="Insira o nome do aluno" />
+            
+            <input class="labelcontact4" type="number" name="nota" id="nota" placeholder="Nota do aluno" />
+            <br />
+            <input class="labelcontact4" type="number" name="prova" id="prova" placeholder="Número da prova" />
+            <input class="labelcontact4" type="number" name="prova" id="prova" placeholder="Informe a matéria" />
+            
+            <button type="submit" class="btn btn-warning btmatricular">Registrar</button>
+          </form>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
       </section>
 
     
