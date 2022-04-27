@@ -294,9 +294,52 @@ h1{
     background-color: rgba(30, 39, 46,1.0);
     color: whitesmoke;
 }
-.headtb:hover b{
+.headtb:hover b, p{
     color: whitesmoke;
 }
+.headtbf{
+    background-color: rgba(22, 160, 133,1.0);
+}
+
+/*-----------------------------------*/
+.headtb10 th{
+    width: 100px;
+    text-align: left;
+}
+.headtb10 .tb10{
+     height: 100px;
+}
+.headtb10{
+    background-color: rgba(30, 39, 46,1.0);
+    color: whitesmoke;
+}
+.headtb10:hover b{
+    color: whitesmoke;
+}
+
+.tb10 p{
+    margin-top: 18px;
+}
+.tb10{
+    background-color: rgba(30, 39, 46,1.0);
+    color: white;
+    height: 80px;
+}
+.tb10:hover p{
+    color: whitesmoke;
+}
+.tb10 .black{
+    background-color: white;
+   
+}
+.black b{
+    color: black;
+}
+.tb10 td{
+    border: 1px solid white;
+}
+/*-----------------------------------*/
+
 .form{
     margin-left: 50%;
 }
@@ -331,7 +374,7 @@ h1{
     font-family: "The Childrow";
   src: url("../fonts/TheChildrow.otf");
 }
-.tb p{
+.tb a p{
     background-color: white;
     width: 40px;
     height: 40px;
@@ -356,10 +399,10 @@ h1{
 }
 .tb{
     color: white;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(30, 39, 46,1.0);
 }
 .tb:hover{
-    background-color: rgba(30, 39, 46,0.8);
+    background-color: black;
 }
 .tb:hover b{
     color: white;
@@ -383,7 +426,7 @@ h1{
     margin-bottom: 200px;
 }
 .topo{
-    margin-left: 45%;
+    margin-left: 40%;
     margin-top: 80px;
     border: 5px solid black;
     height: 70px;
@@ -425,6 +468,12 @@ h1{
 }
 .dropmenu2 .item{
     text-align: center;
+}
+.bottom{
+    height: 400px;
+}
+.bottom2{
+    height: 700px;
 }
 /*-----------------------modulo professor-------------------------*/
 
@@ -655,6 +704,15 @@ footer {
     position: relative;
     left: 30%;
 }
-section{
+.materiais{
     margin-top: 50px;
+}
+.materiais article{
+    padding: 25px;
+    display: inline-block;
+}
+.materiais  img{
+    margin-left: 35px;
+    width: 250px;
+    border: 5px solid white;
 }

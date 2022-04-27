@@ -18,14 +18,14 @@ body{
 .perfis{
     position: absolute;
     top: 200px;
-    left: 7%;
+    left: 8%;
 }
 .perfis img{
     width: 200px;
     border: 8px solid black;
     background-color: rgba(30, 39, 46,1.0);
     border-radius: 100px 100px 100px 100px;
-    transition: 0.6s; 
+    transition: 0.5s; 
 }
 .perfis img:hover{
     background-color: rgba(0, 0, 0,0);
