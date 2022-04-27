@@ -11,17 +11,13 @@ body {
   font-family: "The Childrow";
   src: url("../fonts/TheChildrow.otf");
 }
-.teste {
-  position: relative;
-  top: 200px;
-}
+
 .perfis {
   position: fixed;
-  bottom: 50%;
   display: inline-flex;
+  bottom: 30%;
   width: 100%;
   justify-content: space-evenly;
-  vertical-align: 150px;
 }
 .perfis img {
   width: 200px;
