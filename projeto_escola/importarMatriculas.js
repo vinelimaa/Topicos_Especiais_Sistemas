@@ -112,13 +112,13 @@ function populateTable(jsonObj) {
       var heading_7 = document.createElement('td');
       var heading_8 = document.createElement('td');
 
-      heading_2.textContent = matricula[j];
-      heading_3.textContent = matricula[j];
-      heading_4.textContent = matricula[j];
-      heading_5.textContent = matricula[j];
-      heading_6.textContent = matricula[j];
-      heading_7.textContent = matricula[j];
-      heading_8.textContent = matricula[j];
+      heading_2.textContent = matricula[j].matematica;
+      heading_3.textContent = matricula[j].portugues;
+      heading_4.textContent = matricula[j].historia;
+      heading_5.textContent = matricula[j].geografia;
+      heading_6.textContent = matricula[j].ingles;
+      heading_7.textContent = matricula[j].desenho;
+      heading_8.textContent = matricula[j].musica;
 
       row_2.appendChild(heading_2);
       row_2.appendChild(heading_3);
@@ -150,13 +150,13 @@ function populateTable(jsonObj) {
       var heading_7 = document.createElement('td');
       var heading_8 = document.createElement('td');
 
-       heading_2.textContent = matricula[j];
-      heading_3.textContent = matricula[j];
-      heading_4.textContent = matricula[j];
-      heading_5.textContent = matricula[j];
-      heading_6.textContent = matricula[j];
-      heading_7.textContent = matricula[j];
-      heading_8.textContent = matricula[j];
+      heading_2.textContent = matricula[l].matematica;
+      heading_3.textContent = matricula[l].portugues;
+      heading_4.textContent = matricula[l].historia;
+      heading_5.textContent = matricula[l].geografia;
+      heading_6.textContent = matricula[l].ingles;
+      heading_7.textContent = matricula[l].desenho;
+      heading_8.textContent = matricula[l].musica;
 
       row_2.appendChild(heading_2);
       row_2.appendChild(heading_3);
@@ -188,14 +188,14 @@ function populateTable(jsonObj) {
       var heading_7 = document.createElement('td');
       var heading_8 = document.createElement('td');
 
-        heading_2.textContent = matricula[j];
-      heading_3.textContent = matricula[j];
-      heading_4.textContent = matricula[j];
-      heading_5.textContent = matricula[j];
-      heading_6.textContent = matricula[j];
-      heading_7.textContent = matricula[j];
-      heading_8.textContent = matricula[j];
-      
+      heading_2.textContent = matricula[n].matematica;
+      heading_3.textContent = matricula[n].portugues;
+      heading_4.textContent = matricula[n].historia;
+      heading_5.textContent = matricula[n].geografia;
+      heading_6.textContent = matricula[n].ingles;
+      heading_7.textContent = matricula[n].desenho;
+      heading_8.textContent = matricula[n].musica;
+
       row_2.appendChild(heading_2);
       row_2.appendChild(heading_3);
       row_2.appendChild(heading_4);
