@@ -1,3 +1,15 @@
+#corpo-tabela{
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+}
+#corpo-tabela td{
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  border: 1px solid black;
+  background-color: rgba(30, 39, 46, 1);
+}
 body {
   background-image: url("../img/escola.png");
   background-repeat: repeat-x;
@@ -429,7 +441,7 @@ p {
 }
 .botao5 {
   border: 2px solid white;
-  margin-left: 35px;
+  margin-left: 5%;
   font-weight: bold;
   background-color: rgba(30, 39, 46, 1);
   color: white;
