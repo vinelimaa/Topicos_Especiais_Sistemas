@@ -1,23 +1,3 @@
-const image = document.createElement('img');
-
-image.setAttribute('src','../img/sucesso.png');
-
-image.setAttribute('height', 25); 
-image.setAttribute('width', 25);
-
-
-
-image.onerror = function handleError() {
-  console.log('Image could not be loaded');
-};
-
-image.onload = function handleImageLoaded() {
-  console.log('image loaded successfully');
-};
-
-const box = document.getElementById('box');
-box.appendChild(image);
-
 var requestURL = 'https://vinelimaa.github.io/teste/dados.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
@@ -120,24 +100,20 @@ function populateTable(jsonObj) {
     heading_1.textContent = alunos[i].nome;
     row_2.appendChild(heading_1);
 
-    var matricula = alunos[i].matricula;
-    for (var j = 0; j < matricula.length; j++) {
-
       var heading_2 = document.createElement('td');
+      heading_2.innerHTML = "<b>Matriculado</b>";
       var heading_3 = document.createElement('td');
+      heading_3.innerHTML = "<b>Matriculado</b>";
       var heading_4 = document.createElement('td');
+      heading_4.innerHTML = "<b>Matriculado</b>";
       var heading_5 = document.createElement('td');
+      heading_5.innerHTML = "<b>Matriculado</b>";
       var heading_6 = document.createElement('td');
+      heading_6.innerHTML = "<b>Matriculado</b>";
       var heading_7 = document.createElement('td');
+      heading_7.innerHTML = "<b>Matriculado</b>";
       var heading_8 = document.createElement('td');
-
-      heading_2.textContent = matricula[j].matematica;
-      heading_3.textContent = matricula[j].portugues;
-      heading_4.textContent = matricula[j].historia;
-      heading_5.textContent = matricula[j].geografia;
-      heading_6.textContent = matricula[j].ingles;
-      heading_7.textContent = matricula[j].desenho;
-      heading_8.textContent = matricula[j].musica;
+      heading_8.innerHTML = "<b>Matriculado</b>";
 
       row_2.appendChild(heading_2);
       row_2.appendChild(heading_3);
@@ -149,7 +125,6 @@ function populateTable(jsonObj) {
       tbodyA.appendChild(row_2);
       }
     }
-  }
     for (var k = 0; k < alunos.length; k++) {
     if(alunos[k].matricula=="true"){
     var row_2 = document.createElement('tr');
