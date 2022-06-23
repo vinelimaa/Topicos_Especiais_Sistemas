@@ -11,6 +11,7 @@ populateTable(escola);
 
 function populateTable(jsonObj) {
 
+
   var tableA = document.querySelector('.tabela-A');
   var theadA = document.querySelector('.headtb-A');
   var tbodyA = document.querySelector('.corpo-tabela-A');
@@ -93,27 +94,31 @@ function populateTable(jsonObj) {
 
   var alunos = jsonObj['alunos'];
   for (var i = 0; i < alunos.length; i++) {
-    if(alunos[i].matricula=="true"){
+    if(alunos[i].turma=="7A"){
     var row_2 = document.createElement('tr');
     var heading_1 = document.createElement('td');
 
     heading_1.textContent = alunos[i].nome;
     row_2.appendChild(heading_1);
 
+    var matricula = alunos[i].matricula;
+    for (var j = 0; j < matricula.length; j++) {
+
       var heading_2 = document.createElement('td');
-      heading_2.innerHTML = "<b>Matriculado</b>";
       var heading_3 = document.createElement('td');
-      heading_3.innerHTML = "<b>Matriculado</b>";
       var heading_4 = document.createElement('td');
-      heading_4.innerHTML = "<b>Matriculado</b>";
       var heading_5 = document.createElement('td');
-      heading_5.innerHTML = "<b>Matriculado</b>";
       var heading_6 = document.createElement('td');
-      heading_6.innerHTML = "<b>Matriculado</b>";
       var heading_7 = document.createElement('td');
-      heading_7.innerHTML = "<b>Matriculado</b>";
       var heading_8 = document.createElement('td');
-      heading_8.innerHTML = "<b>Matriculado</b>";
+
+      heading_2.textContent = matricula[j];
+      heading_3.textContent = matricula[j];
+      heading_4.textContent = matricula[j];
+      heading_5.textContent = matricula[j];
+      heading_6.textContent = matricula[j];
+      heading_7.textContent = matricula[j];
+      heading_8.textContent = matricula[j];
 
       row_2.appendChild(heading_2);
       row_2.appendChild(heading_3);
@@ -125,8 +130,9 @@ function populateTable(jsonObj) {
       tbodyA.appendChild(row_2);
       }
     }
+  }
     for (var k = 0; k < alunos.length; k++) {
-    if(alunos[k].matricula=="true"){
+    if(alunos[k].turma=="8B"){
     var row_2 = document.createElement('tr');
     var heading_1 = document.createElement('td');
 
@@ -144,13 +150,13 @@ function populateTable(jsonObj) {
       var heading_7 = document.createElement('td');
       var heading_8 = document.createElement('td');
 
-      heading_2.textContent = matricula[l].matematica;
-      heading_3.textContent = matricula[l].portugues;
-      heading_4.textContent = matricula[l].historia;
-      heading_5.textContent = matricula[l].geografia;
-      heading_6.textContent = matricula[l].ingles;
-      heading_7.textContent = matricula[l].desenho;
-      heading_8.textContent = matricula[l].musica;
+       heading_2.textContent = matricula[j];
+      heading_3.textContent = matricula[j];
+      heading_4.textContent = matricula[j];
+      heading_5.textContent = matricula[j];
+      heading_6.textContent = matricula[j];
+      heading_7.textContent = matricula[j];
+      heading_8.textContent = matricula[j];
 
       row_2.appendChild(heading_2);
       row_2.appendChild(heading_3);
@@ -164,7 +170,7 @@ function populateTable(jsonObj) {
     }
   }
   for (var m = 0; m < alunos.length; m++) {
-    if(alunos[m].matricula=="true"){
+    if(alunos[m].turma=="9C"){
     var row_2 = document.createElement('tr');
     var heading_1 = document.createElement('td');
 
@@ -182,14 +188,14 @@ function populateTable(jsonObj) {
       var heading_7 = document.createElement('td');
       var heading_8 = document.createElement('td');
 
-      heading_2.textContent = matricula[n].matematica;
-      heading_3.textContent = matricula[n].portugues;
-      heading_4.textContent = matricula[n].historia;
-      heading_5.textContent = matricula[n].geografia;
-      heading_6.textContent = matricula[n].ingles;
-      heading_7.textContent = matricula[n].desenho;
-      heading_8.textContent = matricula[n].musica;
-
+        heading_2.textContent = matricula[j];
+      heading_3.textContent = matricula[j];
+      heading_4.textContent = matricula[j];
+      heading_5.textContent = matricula[j];
+      heading_6.textContent = matricula[j];
+      heading_7.textContent = matricula[j];
+      heading_8.textContent = matricula[j];
+      
       row_2.appendChild(heading_2);
       row_2.appendChild(heading_3);
       row_2.appendChild(heading_4);
@@ -202,3 +208,6 @@ function populateTable(jsonObj) {
     }
   }
 }
+
+
+  
