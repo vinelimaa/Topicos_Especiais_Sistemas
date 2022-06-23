@@ -310,14 +310,14 @@ h1 {
   position: static;
 }
 .tb,
-.headtb {
+#cabecalho-tabela {
   text-align: center;
 }
-.headtb {
+#cabecalho-tabela {
   background-color: rgba(30, 39, 46, 1);
   color: whitesmoke;
 }
-.headtb:hover b,
+#cabecalho-tabela:hover b,
 p {
   color: whitesmoke;
 }
@@ -439,7 +439,7 @@ p {
   border: 3px solid rgba(30, 39, 46, 1);
   border-radius: 3px 3px 3px 3px;
 }
-.botao5 {
+.botao5, .botao6, .botao7 {
   border: 2px solid white;
   margin-left: 5%;
   font-weight: bold;
